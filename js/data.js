@@ -81,7 +81,7 @@ const PIPELINE_DATA = {
           name: "Data Validation",
           description: "Automated validation of data quality, schema conformity, and statistical distributions. Catches data corruption, missing values, and out-of-range values.",
           tools: [
-            { name: "Pandas schema checks", desc: "Schema, null, length and label validation in src/data/validate.py" }
+            { name: "Great Expectations checks", desc: "Schema, null, length and label validation in src/data/validate.py" }
           ],
           why: "Garbage in, garbage out. Without validation, corrupted or malicious data can silently degrade model performance or cause training failures."
         },
