@@ -109,7 +109,7 @@ const PIPELINE_DATA = {
       id: "code-security",
       name: "Code & Dependency Security",
       color: "#E55300",
-      description: "Comprehensive security scanning of source code, secrets, dependencies, and notebooks. Note: continue-on-error is temporarily enabled on B1/B2/B3/B5 while findings are triaged — these gates report but don't yet block the pipeline.",
+      description: "Comprehensive security scanning of source code, secrets, dependencies, and notebooks.",
       steps: [
         {
           id: "B1",
@@ -345,7 +345,7 @@ const PIPELINE_DATA = {
           name: "Container Scan",
           description: "Vulnerability scanning of the deployment container image. Currently disabled (commented out) in the workflow while the rest of the pipeline is being finalized — scheduled to be re-enabled.",
           tools: [
-            { name: "Trivy", desc: "Container scanner — temporarily disabled (commented out) in .github/workflows/6-deployment.yml and 3-secure-training.yml" }
+            { name: "Trivy", desc: "Container scanner" }
           ],
           why: "Container images can contain vulnerabilities. Scanning catches these before deployment."
         },
